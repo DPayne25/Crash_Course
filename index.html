@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DakotaJPayne</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching Now</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">DakotaJPayne.</a>
+            </header>
+
+            <h1><span>the</span>DakotaJPayne</h1>
+            
+            <p>Welcome to my Digital Garden: I want my name in the center of the page with a minimalist desing similart to  <a href="https://maaemo.no">this website.</a> </p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "Indianapolis"</p>
+                    </div>
+
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>Random Text for practice</p>
+        </div>
+        <img src="images/desk.JPG" alt="Picture of Dakota at desk">
+    </section>
+
+    <script>
+
+        let btn = document.getElementById('ctn-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click',() => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-over');
+        })
+
+    </script>
+</body>
+</html>
